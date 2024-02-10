@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>926</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourcec.qrc">
+    <normaloff>:/images/img/notepad.png</normaloff>:/images/img/notepad.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#notepad {
+	
+	border-color: rgb(0, 0, 0);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="notepad">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>871</width>
+      <height>651</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>926</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="Create"/>
+    <addaction name="open"/>
+    <addaction name="save"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="information"/>
+    <addaction name="separator"/>
+    <addaction name="close_file"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Шрифт</string>
+    </property>
+    <addaction name="color"/>
+    <addaction name="separator"/>
+    <addaction name="shrift"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="close_file"/>
+   <addaction name="save"/>
+   <addaction name="color"/>
+   <addaction name="shrift"/>
+  </widget>
+  <action name="Create">
+   <property name="icon">
+    <iconset resource="resourcec.qrc">
+     <normaloff>:/images/img/create file.png</normaloff>:/images/img/create file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="open">
+   <property name="icon">
+    <iconset resource="resourcec.qrc">
+     <normaloff>:/images/img/open.png</normaloff>:/images/img/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="icon">
+    <iconset resource="resourcec.qrc">
+     <normaloff>:/images/img/save .png</normaloff>:/images/img/save .png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="information">
+   <property name="text">
+    <string>Информация</string>
+   </property>
+  </action>
+  <action name="close_file">
+   <property name="icon">
+    <iconset resource="resourcec.qrc">
+     <normaloff>:/images/img/qiut.png</normaloff>:/images/img/qiut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выйти из программы</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F4</string>
+   </property>
+  </action>
+  <action name="color">
+   <property name="icon">
+    <iconset resource="resourcec.qrc">
+     <normaloff>:/images/img/palette.png</normaloff>:/images/img/palette.png</iconset>
+   </property>
+   <property name="text">
+    <string>Изменить цвет</string>
+   </property>
+  </action>
+  <action name="shrift">
+   <property name="icon">
+    <iconset resource="resourcec.qrc">
+     <normaloff>:/images/img/font.png</normaloff>:/images/img/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Изменить шрифт</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourcec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

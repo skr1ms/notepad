@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>img/create file.png</file>
+        <file>img/open.png</file>
+        <file>img/qiut.png</file>
+        <file>img/save .png</file>
+        <file>img/notepad.png</file>
+        <file>img/palette.png</file>
+        <file>img/font.png</file>
+    </qresource>
+</RCC>
